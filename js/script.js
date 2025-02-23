@@ -3,7 +3,7 @@ let htmlProgress = document.querySelector(".html-css"),
   htmlValue = document.querySelector(".html-progress");
 
 let htmlStartValue = 0,
-  htmlEndValue = 90,
+  htmlEndValue = 85,
   htmlspeed = 30;
 
 let progresshtml = setInterval(() => {
@@ -45,7 +45,7 @@ let phpProgress = document.querySelector(".php"),
   phpValue = document.querySelector(".php-progress");
 
 let phpStartValue = 0,
-  phpEndValue = 80,
+  phpEndValue = 75,
   phpspeed = 30;
 
 let progressphp = setInterval(() => {
@@ -60,6 +60,8 @@ let progressphp = setInterval(() => {
     clearInterval(progressphp);
   }
 }, phpspeed);
+
+
 
 // reactjs progress circular bar 
 let reactProgress = document.querySelector(".reactjs"),
@@ -81,6 +83,53 @@ let progressreact = setInterval(() => {
     clearInterval(progressreact);
   }
 }, rjsspeed);
+
+
+
+
+let reactNProgress = document.querySelector(".reactN"),
+  reactNValue = document.querySelector(".reactN-progress");
+
+let reactNStartValue = 0,
+  reactNEndValue = 50,
+  rNspeed = 30;
+
+let progressreactN = setInterval(() => {
+  reactNStartValue++;
+
+  reactNValue.textContent = `${reactNStartValue}%`;
+  reactNProgress.style.background = `conic-gradient(#3f396d ${
+    reactNStartValue * 3.6
+  }deg, #ededed 0deg)`;
+
+  if (reactNStartValue == reactNEndValue) {
+    clearInterval(progressreactN);
+  }
+}, rNspeed);
+
+
+
+let machineProgress = document.querySelector(".machine"),
+  machineValue = document.querySelector(".machine-progress");
+
+let machineStartValue = 0,
+  machineEndValue = 50,
+  machinespeed = 30;
+
+let progressmachine = setInterval(() => {
+  machineStartValue++;
+
+  machineValue.textContent = `${machineStartValue}%`;
+  machineProgress.style.background = `conic-gradient(#3f396d ${
+    machineStartValue * 3.6
+  }deg, #ededed 0deg)`;
+
+  if (machineStartValue == machineEndValue) {
+    clearInterval(progressmachine);
+  }
+}, machinespeed);
+
+
 
 
 // filter using javascript

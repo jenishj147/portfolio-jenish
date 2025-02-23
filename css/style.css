@@ -188,6 +188,13 @@ body{
 .reactjs-progress{
     color: #3f396d;
 }
+.reactN-progress{
+    color:#f33a7e;
+ 
+}
+.machine-progress{
+    color:#fca61f;
+}
 .text{
     font-size: 1.2rem;
     font-weight: 500;
